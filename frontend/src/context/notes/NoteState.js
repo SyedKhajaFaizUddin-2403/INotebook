@@ -9,7 +9,7 @@ const NoteState = (props) => {
 
   //get all notes
   const getNote = async (req,res) => {
-    const response = await fetch('https://inote-mern-back.onrender.com/getnotes', {
+    const response = await fetch('https://back-0tta.onrender.com/getnotes', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ const NoteState = (props) => {
   //add a note
   const addNote = async (title, description, tag) => {
 
-    const response = await fetch('https://inote-mern-back.onrender.com/api/notes/addnote', {
+    const response = await fetch('https://back-0tta.onrender.com/api/notes/addnote', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ const NoteState = (props) => {
   //delete a note
   const deleteNote = async(id) => {
     //a\Api call to delete
-    const response = await fetch(`https://inote-mern-back.onrender.com/api/notes/deletenote/${id}`, {
+    const response = await fetch(`https://back-0tta.onrender.com/api/notes/deletenote/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const NoteState = (props) => {
   //edit a note
   const editNote = async (id, title, description, tag) => {
 
-    const response = await fetch(`https://inote-mern-back.onrender.com/api/notes/updatenote/${id}`, {
+    const response = await fetch(`https://back-0tta.onrender.com/api/notes/updatenote/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

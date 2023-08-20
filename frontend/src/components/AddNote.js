@@ -33,7 +33,7 @@ function AddNote(props) {
     const { title, description, tag } = note;
 
     axios
-      .post("https://inote-mern-back.onrender.com/addnotes", {
+      .post("https://back-0tta.onrender.com/addnotes", {
         user: user,
         title: title,
         description: description,

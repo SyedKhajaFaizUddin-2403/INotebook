@@ -23,7 +23,7 @@ function Login(props) {
     const handleClick = async () => {
 let data
         const { email, password, } = credentials;
-        axios.post("https://inote-mern-back.onrender.com/login", {
+        axios.post("https://back-0tta.onrender.com/login", {
             email: email,
             password:password
         }).then(function (response) {
@@ -39,7 +39,7 @@ console.log(data);
 
     }
 
-        // const response = await fetch("https://inote-mern-back.onrender.com/login", {
+        // const response = await fetch("https://back-0tta.onrender.com/login", {
         //     method: 'POST',
         //     headers: {
         //         'Content-Type': 'application/json',

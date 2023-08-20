@@ -46,7 +46,7 @@ const navigate=useNavigate()
         
         
           axios
-            .post("https://inote-mern-back.onrender.com/signup", {
+            .post("https://back-0tta.onrender.com/signup", {
               name:name,
               email: email,
               password: password,
@@ -79,7 +79,7 @@ const navigate=useNavigate()
     }
 
         // const response = await fetch(
-        //   "https://inote-mern-back.onrender.com/api/auth/createuser",
+        //   "https://back-0tta.onrender.com/api/auth/createuser",
         //   {
         //     method: "POST",
         //     headers: {

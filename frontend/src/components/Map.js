@@ -19,7 +19,7 @@ function Map() {
 const [var1,setVar]=useState("")
     useEffect(() => {
         axios
-          .post("https://inote-mern-back.onrender.com/getnotes", {
+          .post("https://back-0tta.onrender.com/getnotes", {
             filter:filter,
             user: id,
           })

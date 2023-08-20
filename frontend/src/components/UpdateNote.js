@@ -32,7 +32,7 @@ function UpdateNote() {
     const { title, description, tag } = note;
 
     axios
-      .post("https://inote-mern-back.onrender.com/update", {
+      .post("https://back-0tta.onrender.com/update", {
         user: props.id,
         oldtitle: props.title,
         olddescription: props.description,
